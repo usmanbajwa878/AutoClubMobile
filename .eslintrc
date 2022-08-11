@@ -2,10 +2,13 @@
 //# "warn" or 1 - turn the rule on as a warning(doesn’ t affect exit code)
 //# "error" or 2 - turn the rule on as an error(exit code is 1 when triggered)
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "env": {
     "browser": true,
-    "react-native/react-native": true
+    "react-native/react-native": true,
+    "es6": true,
+    "node": true
+ 
   },
   "plugins": [
     "react",
